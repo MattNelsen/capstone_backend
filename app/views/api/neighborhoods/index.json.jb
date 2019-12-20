@@ -1,0 +1,5 @@
+@neighborhoods.map do |neighborhood|
+  {
+    name: neighborhood.name,
+  }
+end
