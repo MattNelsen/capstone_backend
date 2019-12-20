@@ -1,4 +1,6 @@
 class Api::NeighborhoodsController < ApplicationController
+  protect_from_forgery with: :null_session
+
   def index
     @neighborhoods = Neighborhood.all
     render "index.json.jb"
@@ -20,7 +22,7 @@ class Api::NeighborhoodsController < ApplicationController
   def update
     @neighborhood = Neighborhood.find_by(id: params[:id])
     @neighborhood.name = params[:name] || @neighborhood.name
-    neighborhood.save
+    @neighborhood.save
     render "show.json.jb"
   end
 
