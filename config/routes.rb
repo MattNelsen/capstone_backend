@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get "/bars/:id" => "bars#show"
+
+    get "/comments" => "comments#create"
   end
 end
