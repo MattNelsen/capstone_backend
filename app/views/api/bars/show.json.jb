@@ -1,0 +1,5 @@
+{
+  id: @bar.id,
+  name: @bar.name,
+  neighborhood_id: @bar.neighborhood_id,
+}
