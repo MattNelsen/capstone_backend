@@ -1,5 +1,6 @@
 @neighborhoods.map do |neighborhood|
   {
+    id: neighborhood.id,
     name: neighborhood.name,
   }
 end

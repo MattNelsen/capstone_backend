@@ -5,5 +5,8 @@ Rails.application.routes.draw do
     get "/neighborhoods/:id" => "neighborhoods#show"
     patch "/neighborhoods/:id" => "neighborhoods#update"
     delete "/neighborhoods/:id" => "neighborhoods#destroy"
+
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
   end
 end

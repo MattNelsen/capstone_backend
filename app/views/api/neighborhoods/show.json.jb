@@ -1,3 +1,4 @@
 {
   name: @neighborhood.name,
+  bars: @neighborhood.bars,
 }
