@@ -12,5 +12,7 @@ Rails.application.routes.draw do
     get "/bars/:id" => "bars#show"
 
     get "/comments" => "comments#create"
+
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
   end
 end

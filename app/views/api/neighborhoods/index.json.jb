@@ -2,5 +2,6 @@
   {
     id: neighborhood.id,
     name: neighborhood.name,
+    bars: neighborhood.bars,
   }
 end
