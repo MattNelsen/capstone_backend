@@ -2,6 +2,12 @@
   {
     id: neighborhood.id,
     name: neighborhood.name,
-    bars: neighborhood.bars,
+    bars: neighborhood.bars.map do |bar|
+      {
+        id: bar.id,
+        name: bar.name,
+        specials: bar.specials,
+      }
+    end,
   }
 end

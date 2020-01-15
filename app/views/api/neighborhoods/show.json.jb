@@ -1,5 +1,13 @@
 {
   id: @neighborhood.id,
   name: @neighborhood.name,
-  bars: @neighborhood.bars,
+  image: @neighborhood.image,
+  bars: @neighborhood.bars.map do |bar|
+    {
+      id: bar.id,
+      name: bar.name,
+      address: bar.address,
+      specials: bar.specials,
+    }
+  end,
 }

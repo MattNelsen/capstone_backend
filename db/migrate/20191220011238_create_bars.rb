@@ -3,6 +3,7 @@ class CreateBars < ActiveRecord::Migration[6.0]
     create_table :bars do |t|
       t.string :name
       t.integer :neighborhood_id
+      t.string :address
 
       t.timestamps
     end
