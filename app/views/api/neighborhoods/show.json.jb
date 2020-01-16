@@ -2,6 +2,7 @@
   id: @neighborhood.id,
   name: @neighborhood.name,
   image: @neighborhood.image,
+  description: @neighborhood.description,
   bars: @neighborhood.bars.map do |bar|
     {
       id: bar.id,
