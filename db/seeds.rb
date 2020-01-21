@@ -3,7 +3,7 @@ User.create!(name: "miranda", email: "miranda@email.com", password: "password")
 
 Neighborhood.create!(name: "Logan Square", image: "https://cdn.vox-cdn.com/thumbor/UAh8VjrwQNzQQ880uANp-7v4qLE=/0x0:2048x1365/1200x800/filters:focal(861x520:1187x846)/cdn.vox-cdn.com/uploads/chorus_image/image/57954839/27211487959_893cd4d20b_k.0.jpg", description: "North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer
       taverns.")
-Neighborhood.create!(name: "Wicker Park", image: "http://habitatcsn.files.wordpress.com/2012/01/wicker1.png", description: "Wicker Park has everything from your local dive bar to upscale cocktail lounges. Whether you’re looking to get in a good game of ping pong or sing your heart out in karaoke, you’re in for a diverse experience in this Chicago neighborhood.")
+Neighborhood.create!(name: "Wicker Park", image: "http://habitatcsn.files.wordpress.com/2012/01/wicker1.png", description: "Wicker Park has everything from your local dive bar to upscale cocktail lounges. Whether you’re looking to get in a good game of ping pong or sing your heart out in karaoke.")
 Neighborhood.create!(name: "River North", image: "https://www.price4limo.com/locations/site/assets/files/126852/chicago_nightlife_review.600x0-is.jpg", description: "Folks looking for terrific cocktails at good prices, creative bar food, and more edge than other downtown spots will find that and more")
 Neighborhood.create!(name: "Lakeview", image: "https://cdn.choosechicago.com/uploads/2019/05/wrigleyville-1-1800x900.jpg", description: "Head to a whiskey tavern, drink some craft beer or go sing your heart out at karaoke in some of Lakeview's best bars.")
 Neighborhood.create!(name: "Lincoln Park", image: "https://img.theculturetrip.com/768x432/wp-content/uploads/2019/04/feature_dtd901.jpg", description: "Hit up the top Lincoln Park bars for well-crafted cocktails, excellent pours of wine or a shot of Malört and a beer.")
@@ -62,6 +62,11 @@ Bar.create!(name: "Burger Bar", neighborhood_id: 5, address: "3160 N Clark St, C
 Bar.create!(name: "J9 Wine Bar", neighborhood_id: 5, address: "3160 N Clark St, Chicago, IL 60657")
 Bar.create!(name: "King of Cups", neighborhood_id: 5, address: "2238 N Lincoln Ave, Chicago, IL 60614")
 Bar.create!(name: "Prost!", neighborhood_id: 5, address: "2566 N Lincoln Ave, Chicago, IL 60614")
+Bar.create!(name: "Slippery Slope", neighborhood_id: 1, address: "2357 N Milwaukee Ave, Chicago, IL 60647")
+Bar.create!(name: "The Boiler Room", neighborhood_id: 1, address: "2210 N California Ave #1307, Chicago, IL 60647")
+Bar.create!(name: "Innjoy Logan Square", neighborhood_id: 1, address: "2200 N Milwaukee Ave, Chicago, IL 60647")
+Bar.create!(name: "Owen & Engine", neighborhood_id: 1, address: " 2700 N Western Ave, Chicago, IL 60647")
+Bar.create!(name: "Weegee's Lounge", neighborhood_id: 1, address: "3659 W Armitage Ave, Chicago, IL 60647")
 
 Special.create!(description: "Well drinks half off", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 30), day_of_week: "Thursday", bar_id: 1)
 Special.create!(description: "Half off appetizers", start_time: Time.new(2019, 1, 30, 4, 30), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 2)
@@ -116,6 +121,12 @@ Special.create!(description: "All appetizers are half off", start_time: Time.new
 Special.create!(description: "Burgers are $3", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 51)
 Special.create!(description: "Well drinks are 2 for 1", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 52)
 Special.create!(description: "Bud light bottles are $2", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 53)
+Special.create!(description: "Well drinks are on special", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 54)
+Special.create!(description: "Coors light pitchers for $4", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 55)
+Special.create!(description: "Appetizers are buy one get one", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 56)
+Special.create!(description: "Bud light bottles are $2", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 57)
+Special.create!(description: "Half off all food!", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 58)
+Special.create!(description: "Aluminum cans are $3", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 59)
 
 Comment.create!(details: "bar was great", user_id: 1, bar_id: 1)
 Comment.create!(details: "servers were nice but a little pricey", user_id: 1, bar_id: 1)
