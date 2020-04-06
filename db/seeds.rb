@@ -70,6 +70,7 @@ Bar.create!(name: "Weegee's Lounge", neighborhood_id: 1, address: "3659 W Armita
 Bar.create!(name: "Sluggers World Class Sports Bar", neighborhood_id: 4, address: "3540 N Clark St, Chicago, IL 60657")
 Bar.create!(name: "Cubby Bear", neighborhood_id: 4, address: "1059 W Addison St, Chicago, IL 60613")
 Bar.create!(name: "Sports Corner Grill", neighborhood_id: 4, address: "956 W Addison St, Chicago, IL 60613")
+Bar.create!(name: "Foxtrot Market", neighborhood_id: 2, address: "1722 West Division, Chicago IL 60647")
 
 Special.create!(description: "Well drinks half off", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 30), day_of_week: "Thursday", bar_id: 1)
 Special.create!(description: "Half off appetizers", start_time: Time.new(2019, 1, 30, 4, 30), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 2)
@@ -133,6 +134,7 @@ Special.create!(description: "Aluminum cans are $3", start_time: Time.new(2019, 
 Special.create!(description: "Budweisers are half off on game days!", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 60)
 Special.create!(description: "Shot and a beer for $7", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 61)
 Special.create!(description: "Old Styles are half off", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 62)
+Special.create!(description: "Draft pours are half off", start_time: Time.new(2019, 1, 30, 4, 00), end_time: Time.new(2019, 1, 30, 6, 00), day_of_week: "Thursday", bar_id: 63)
 
 Comment.create!(details: "bar was great", user_id: 1, bar_id: 1)
 Comment.create!(details: "servers were nice but a little pricey", user_id: 1, bar_id: 1)
